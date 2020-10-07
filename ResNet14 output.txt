@@ -1,0 +1,196 @@
+Files already downloaded and verified
+Files already downloaded and verified
+ResNet(
+  (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (layer1): Sequential(
+    (0): Block(
+      (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (1): Block(
+      (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+  )
+  (layer2): Sequential(
+    (0): Block(
+      (conv1): Conv2d(32, 64, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential(
+        (0): Conv2d(32, 64, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): Block(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+  )
+  (layer3): Sequential(
+    (0): Block(
+      (conv1): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential(
+        (0): Conv2d(64, 128, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): Block(
+      (conv1): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+  )
+  (linear): Linear(in_features=128, out_features=10, bias=True)
+)
+Total number of parameters:  696618
+[1,   256] loss: 1.893
+[1,   512] loss: 1.512
+[1,   768] loss: 1.355
+Epoch 1: Accuracy of the network on the 10000 test images: 5238/10000 = 52.380000 %
+[2,   256] loss: 1.241
+[2,   512] loss: 1.139
+[2,   768] loss: 1.070
+Epoch 2: Accuracy of the network on the 10000 test images: 6290/10000 = 62.900000 %
+[3,   256] loss: 0.994
+[3,   512] loss: 0.931
+[3,   768] loss: 0.913
+Epoch 3: Accuracy of the network on the 10000 test images: 6820/10000 = 68.200000 %
+[4,   256] loss: 0.829
+[4,   512] loss: 0.833
+[4,   768] loss: 0.810
+Epoch 4: Accuracy of the network on the 10000 test images: 7054/10000 = 70.540000 %
+[5,   256] loss: 0.745
+[5,   512] loss: 0.736
+[5,   768] loss: 0.727
+Epoch 5: Accuracy of the network on the 10000 test images: 7338/10000 = 73.380000 %
+[6,   256] loss: 0.653
+[6,   512] loss: 0.655
+[6,   768] loss: 0.646
+Epoch 6: Accuracy of the network on the 10000 test images: 7502/10000 = 75.020000 %
+[7,   256] loss: 0.578
+[7,   512] loss: 0.583
+[7,   768] loss: 0.586
+Epoch 7: Accuracy of the network on the 10000 test images: 7629/10000 = 76.290000 %
+[8,   256] loss: 0.527
+[8,   512] loss: 0.533
+[8,   768] loss: 0.526
+Epoch 8: Accuracy of the network on the 10000 test images: 7801/10000 = 78.010000 %
+[9,   256] loss: 0.463
+[9,   512] loss: 0.484
+[9,   768] loss: 0.482
+Epoch 9: Accuracy of the network on the 10000 test images: 7856/10000 = 78.560000 %
+[10,   256] loss: 0.429
+[10,   512] loss: 0.430
+[10,   768] loss: 0.428
+Epoch 10: Accuracy of the network on the 10000 test images: 7879/10000 = 78.790000 %
+[11,   256] loss: 0.369
+[11,   512] loss: 0.389
+[11,   768] loss: 0.406
+Epoch 11: Accuracy of the network on the 10000 test images: 7916/10000 = 79.160000 %
+[12,   256] loss: 0.336
+[12,   512] loss: 0.351
+[12,   768] loss: 0.378
+Epoch 12: Accuracy of the network on the 10000 test images: 7836/10000 = 78.360000 %
+[13,   256] loss: 0.300
+[13,   512] loss: 0.327
+[13,   768] loss: 0.338
+Epoch 13: Accuracy of the network on the 10000 test images: 7998/10000 = 79.980000 %
+[14,   256] loss: 0.267
+[14,   512] loss: 0.278
+[14,   768] loss: 0.298
+Epoch 14: Accuracy of the network on the 10000 test images: 8007/10000 = 80.070000 %
+[15,   256] loss: 0.228
+[15,   512] loss: 0.263
+[15,   768] loss: 0.270
+Epoch 15: Accuracy of the network on the 10000 test images: 8011/10000 = 80.110000 %
+[16,   256] loss: 0.205
+[16,   512] loss: 0.219
+[16,   768] loss: 0.238
+Epoch 16: Accuracy of the network on the 10000 test images: 7907/10000 = 79.070000 %
+[17,   256] loss: 0.178
+[17,   512] loss: 0.190
+[17,   768] loss: 0.206
+Epoch 17: Accuracy of the network on the 10000 test images: 7994/10000 = 79.940000 %
+[18,   256] loss: 0.152
+[18,   512] loss: 0.162
+[18,   768] loss: 0.194
+Epoch 18: Accuracy of the network on the 10000 test images: 7905/10000 = 79.050000 %
+[19,   256] loss: 0.134
+[19,   512] loss: 0.152
+[19,   768] loss: 0.166
+Epoch 19: Accuracy of the network on the 10000 test images: 8011/10000 = 80.110000 %
+[20,   256] loss: 0.124
+[20,   512] loss: 0.122
+[20,   768] loss: 0.138
+Epoch 20: Accuracy of the network on the 10000 test images: 7995/10000 = 79.950000 %
+[21,   256] loss: 0.097
+[21,   512] loss: 0.100
+[21,   768] loss: 0.118
+Epoch 21: Accuracy of the network on the 10000 test images: 7970/10000 = 79.700000 %
+[22,   256] loss: 0.082
+[22,   512] loss: 0.089
+[22,   768] loss: 0.093
+Epoch 22: Accuracy of the network on the 10000 test images: 7935/10000 = 79.350000 %
+[23,   256] loss: 0.069
+[23,   512] loss: 0.069
+[23,   768] loss: 0.080
+Epoch 23: Accuracy of the network on the 10000 test images: 7986/10000 = 79.860000 %
+[24,   256] loss: 0.066
+[24,   512] loss: 0.070
+[24,   768] loss: 0.082
+Epoch 24: Accuracy of the network on the 10000 test images: 7986/10000 = 79.860000 %
+[25,   256] loss: 0.054
+[25,   512] loss: 0.054
+[25,   768] loss: 0.070
+Epoch 25: Accuracy of the network on the 10000 test images: 7931/10000 = 79.310000 %
+[26,   256] loss: 0.053
+[26,   512] loss: 0.051
+[26,   768] loss: 0.059
+Epoch 26: Accuracy of the network on the 10000 test images: 7953/10000 = 79.530000 %
+[27,   256] loss: 0.038
+[27,   512] loss: 0.037
+[27,   768] loss: 0.044
+Epoch 27: Accuracy of the network on the 10000 test images: 8018/10000 = 80.180000 %
+[28,   256] loss: 0.029
+[28,   512] loss: 0.031
+[28,   768] loss: 0.036
+Epoch 28: Accuracy of the network on the 10000 test images: 8001/10000 = 80.010000 %
+[29,   256] loss: 0.038
+[29,   512] loss: 0.028
+[29,   768] loss: 0.032
+Epoch 29: Accuracy of the network on the 10000 test images: 7972/10000 = 79.720000 %
+[30,   256] loss: 0.022
+[30,   512] loss: 0.024
+[30,   768] loss: 0.022
+Epoch 30: Accuracy of the network on the 10000 test images: 8009/10000 = 80.090000 %
+Finished Training!
+Accuracy of the network on the 50000 training images: 99.794000 %
+Accuracy of the network on the 10000 test images: 8009/10000 = 80.090000 %
+Accuracy of      plane : 78.571429 %
+Accuracy of        car : 92.000000 %
+Accuracy of       bird : 65.822785 %
+Accuracy of        cat : 50.684932 %
+Accuracy of       deer : 72.727273 %
+Accuracy of        dog : 76.271186 %
+Accuracy of       frog : 82.142857 %
+Accuracy of      horse : 87.500000 %
+Accuracy of       ship : 94.827586 %
+Accuracy of      truck : 87.179487 %
+Saved ResNet14 trained model in ResNet14_1.pth file in home directory
